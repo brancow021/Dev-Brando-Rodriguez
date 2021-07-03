@@ -3,9 +3,10 @@
 @tailwind base;
 
 /* purgecss start ignore */
-@tailwind components;
+@tailwind  base;
+@tailwind  components;
 /* purgecss end ignore */
-@tailwind utilities;
+@tailwind  utilities;
 
 html{
    min-height: -moz-available; /* WebKit-based browsers will ignore this. */
