@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import AssignmentIcon from '@material-ui/icons/Assignment';import { metadata } from "../../metaDataPages";
 
 export const HomeHeader = () => {
