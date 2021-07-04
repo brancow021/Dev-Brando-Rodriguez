@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+   min-height: -moz-available; /* WebKit-based browsers will ignore this. */
+   min-height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+   min-height: fill-available;
+   height: -webkit-fill-available;
+}
+
+body{
+   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+   height: calc(var(--vh, 1vh) * 100);
+}
+
+p,h1,h2,h3{
+   font-family: 'Roboto', sans-serif;
+}
+
+.antonFont{
+   font-family: 'Anton', sans-serif;
+}
