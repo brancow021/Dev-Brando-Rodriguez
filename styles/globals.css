@@ -13,6 +13,7 @@ html{
    min-height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
    min-height: fill-available;
    height: -webkit-fill-available;
+   scroll-behavior: smooth;
 }
 
 body{

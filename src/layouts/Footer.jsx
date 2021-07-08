@@ -9,9 +9,9 @@ export const Footer = () => {
 
 	return (
 		<>
-			<div className="flex justify-center items-center h-full w-full flex-col">
-				<div className="flex flex-row">
-					<div className="mx-3">
+			<div className="flex justify-center items-center w-full h-full flex-col">
+				<div className="flex flex-row mt-10">
+					<div className="mx-2">
 						<a
 							href={metadata.linkedinUrl}
 							target="blank"
@@ -20,7 +20,7 @@ export const Footer = () => {
 							<LinkedInIcon style={{ color: "white" }} />
 						</a>
 					</div>
-					<div className="mx-3">
+					<div className="mx-2">
 						<a
 							href={metadata.githubUrl}
 							target="blank"
@@ -29,7 +29,7 @@ export const Footer = () => {
 							<GitHubIcon style={{ color: "white" }} />
 						</a>
 					</div>
-					<div className="mx-3">
+					<div className="mx-2">
 						<a
 							href={metadata.githubUrl}
 							target="blank"
@@ -39,12 +39,13 @@ export const Footer = () => {
 						</a>
 					</div>
 				</div>
-				<div>
-					<p className="text-center pt-6 text-white font-sans capitalize">
-						{metadata.author} &copy;{" "}
-						<span className="font-bold">{date}</span>
-					</p>
-				</div>
+			</div>
+
+			<div className="my-6">
+				<p className="text-center text-white font-sans capitalize">
+					{metadata.author} &copy;{" "}
+					<span className="font-bold">{date}</span>
+				</p>
 			</div>
 		</>
 	);

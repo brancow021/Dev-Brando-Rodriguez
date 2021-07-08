@@ -8,10 +8,10 @@ import { metadata } from "../../metaDataPages";
 export const About = () => {
 	return (
 		<>
-			<div className="flex justify-center items-center flex-col ">
+			<div className="flex justify-center items-center flex-col mt-10">
 				<div className="p-2 w-full flex items-center flex-col ">
                <div className="w-20 border-blue-500 border-b-4 rounded">
-                  <h2 className="antonFont text-3xl text-center text-gray-900">
+                  <h2 className="antonFont text-3xl text-center text-gray-900 uppercase">
                      About
                   </h2>
                </div>
@@ -22,7 +22,7 @@ export const About = () => {
                </div>
 				</div>
 				<div className="flex lg:flex-row flex-col w-full justify-center">
-					<div className="w-full h-full flex justify-center items-center mt-5">
+					<div className="w-full h-full flex justify-center items-center mt-5 lg:mx-3">
 						<div className="bg-gray-100 rounded-xl mt-2 border border-gray-300 text-gray-800 lg:overflow-hidden flex items-center flex-col h-72 text-center mb-2">
 							<div className="rounded-t-xl mb-3 bg-gray-200 w-full p-2">
 								<h3 className="text-center antonFont text-xl font-normal">
@@ -41,7 +41,7 @@ export const About = () => {
 							</div>
 						</div>
 					</div>
-					<div className="w-full h-full flex justify-center items-center mt-5 lg:mx-7">
+					<div className="w-full h-full flex justify-center items-center mt-5 lg:mx-3">
 						<div className="bg-gray-100 rounded-xl mt-2 border border-gray-300 text-gray-800 lg:overflow-hidden flex items-center flex-col h-72 text-center mb-2">
 							<div className="rounded-t-xl mb-3 bg-gray-200 w-full p-2">
 								<h3 className="text-center antonFont text-xl font-normal">
@@ -59,7 +59,7 @@ export const About = () => {
 							</div>
 						</div>
 					</div>
-					<div className="w-full h-full flex justify-center items-center mt-5 lg:mx-7">
+					<div className="w-full h-full flex justify-center items-center mt-5 lg:mx-3">
 						<div className="bg-gray-100 rounded-xl mt-2 border border-gray-300 text-gray-800 lg:overflow-hidden flex items-center flex-col h-72 text-center mb-2">
 							<div className="rounded-t-xl mb-3 bg-gray-200 w-full p-2">
 								<h3 className="text-center antonFont text-xl font-normal">
@@ -76,7 +76,7 @@ export const About = () => {
 							</div>
 						</div>
 					</div>
-					<div className="w-full h-full flex justify-center items-center mt-5 lg:mx-7">
+					<div className="w-full h-full flex justify-center items-center mt-5 lg:mx-3">
 						<div className="bg-gray-100 rounded-xl mt-2 border border-gray-300 text-gray-800 lg:overflow-hidden flex items-center flex-col h-72 text-center mb-2">
 							<div className="rounded-t-xl mb-3 bg-gray-200 w-full p-2">
 								<h3 className="text-center antonFont text-xl font-normal">

@@ -42,17 +42,22 @@ export const Navbar = () => {
 								<p className="antonFont font-normal">Home</p>
 							</li>
 						</a>
-						<a href="">
+						<a href="#about">
 							<li className="lg:mx-2 p-2 text-white hover:text-blue-400 font-semibold">
 								<p className="antonFont font-normal">About</p>
 							</li>
 						</a>
-						<a href="">
+						<a href="#skills">
 							<li className="lg:mx-2 p-2 text-white hover:text-blue-400 font-semibold">
 								<p className="antonFont font-normal">Skills</p>
 							</li>
 						</a>
-						<a href="">
+                  <a href="#projects">
+							<li className="lg:mx-2 p-2 text-white hover:text-blue-400 font-semibold">
+								<p className="antonFont font-normal">Projects</p>
+							</li>
+						</a>
+						<a href="#contact">
 							<li className="lg:mx-2 p-2 text-white hover:text-blue-400 font-semibold">
 								<p className="antonFont font-normal">Contact</p>
 							</li>
