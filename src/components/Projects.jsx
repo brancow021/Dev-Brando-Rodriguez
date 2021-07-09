@@ -1,9 +1,11 @@
-import React from "react";
+import Image from "next/image";
+import { projectsData } from "../data/projects";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 export const Projects = () => {
 	return (
 		<>
-			<div className="mt-10 flex justify-center items-center flex-col lg:px-5">
+			<div className="mt-10 flex justify-center items-center flex-col lg:px-10">
 				<div className="w-30 border-blue-500 border-b-4 rounded mb-10">
 					<h2 className="antonFont text-3xl text-center text-gray-900 uppercase">
 						Projects
@@ -29,42 +31,41 @@ export const Projects = () => {
 					</ul>
 				</div>
 				<div className="flex flex-col lg:grid grid-cols-3 gap-4 my-10">
-					<div className="bg-gray-200">
-						<div>
-							<img
-								src="https://www.clasesdeperiodismo.com/wp-content/uploads/2016/09/gif-animados.jpg"
-								alt=""
-							/>
+					{projectsData?.map((project, index) => (
+						<div
+							key={index}
+							className="bg-gray-200 border rounded-t-xl rounded-b-xl"
+						>
+							<div className="rounded-t-xl bg-gray-200 border-gray-400 border-t-2 w-full p-2">
+								<h3 className="text-center antonFont text-xl font-normal uppercase">
+									{project.name}
+								</h3>
+							</div>
+							<div className="bg-white w-full">
+								<Image
+									className="object-cover w-full"
+									src={project.source}
+									alt={project.name}
+								/>
+							</div>
+							<div className="bg-white h-28 flex items-center">
+								<div className="p-4 text-center font-semibold">
+									{project.description}
+								</div>
+							</div>
+							<a
+								href={project.url}
+								rel="noreferrer"
+								target="_blank"
+								className="py-2 px-4 bg-blue-600 rounded-b-lg text-white transition duration-500 ease-in-out hover:bg-blue-800 transform hover:-translate-y-1 hover:scale-100 flex justify-center"
+							>
+								<div className="text-white mx-2">
+									<GitHubIcon />
+								</div>
+								<div className="text-white text-center">View Code</div>
+							</a>
 						</div>
-						<div className="p-1 w-full text-center bg-blue-500 rounded-b-lg text-white">View Site</div>
-					</div>
-               <div className="bg-gray-200 h-full">
-						<div>
-							<img
-								src="https://www.clasesdeperiodismo.com/wp-content/uploads/2016/09/gif-animados.jpg"
-								alt=""
-							/>
-						</div>
-						<div className="p-1 w-full text-center bg-blue-500 rounded-b-lg text-white">View Site</div>
-					</div>
-               <div className="bg-gray-200 h-full">
-						<div>
-							<img
-								src="https://www.clasesdeperiodismo.com/wp-content/uploads/2016/09/gif-animados.jpg"
-								alt=""
-							/>
-						</div>
-						<div className="p-1 w-full text-center bg-blue-500 rounded-b-lg text-white">View Site</div>
-					</div>
-               <div className="bg-gray-200 h-full">
-						<div>
-							<img
-								src="https://www.clasesdeperiodismo.com/wp-content/uploads/2016/09/gif-animados.jpg"
-								alt=""
-							/>
-						</div>
-						<div className="p-1 w-full text-center bg-blue-500 rounded-b-lg text-white">View Site</div>
-					</div>
+					))}
 				</div>
 			</div>
 		</>
