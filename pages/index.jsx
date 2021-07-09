@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Head from "next/head";
 import { metadata } from "../metaDataPages";
 import { Footer } from "../src/layouts/Footer";
@@ -20,7 +19,7 @@ export default function Home() {
 			</Head>
 
 			<main>
-				<header className="w-full h-screen bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900">
+				<header id="home" className="w-full h-screen bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900">
 					<nav>
 						<Navbar />
 					</nav>

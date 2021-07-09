@@ -37,7 +37,7 @@ export const Navbar = () => {
 					}
 				>
 					<ul className="flex flex-col lg:flex-row p-3">
-						<a href="">
+						<a href="#home">
 							<li className="lg:mx-2 p-2 text-white hover:text-blue-400 font-semibold">
 								<p className="antonFont font-normal">Home</p>
 							</li>
