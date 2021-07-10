@@ -27,13 +27,13 @@ export default function Home() {
 				</header>
 
 				<div className="py-6 h-auto bg-gray-100 w-full lg:px-40 sm:px-20 md-px-20 px-8">
-               <div id="about">
+               <div className="wow animate__animated animate__lightSpeedInLeft" id="about">
                   <About />
                </div>
-               <div id="skills">
+               <div className="animate__animated animate__lightSpeedInLeft" id="skills">
 					   <Skills />
                </div>
-               <div id="projects">
+               <div className="animate__animated animate__lightSpeedInLeft" id="projects">
                   <Projects />
                </div>
 				</div>

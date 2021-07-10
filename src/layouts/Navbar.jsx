@@ -11,7 +11,7 @@ export const Navbar = () => {
 
 	return (
 		<>
-			<div className="w-full lg:px-20 lg:py-2 lg:flex lg:items-center lg:justify-between flex-col lg:flex-row">
+			<div className="w-full lg:px-20 lg:py-2 lg:flex lg:items-center lg:justify-between flex-col lg:flex-row animate__animated animate__lightSpeedInLeft">
             <div className="flex flex-row items-center w-full justify-between px-3 ">
                <div>
                   <a href={'/'}>

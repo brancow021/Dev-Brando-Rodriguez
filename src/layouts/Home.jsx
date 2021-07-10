@@ -7,14 +7,14 @@ export const HomeHeader = () => {
 			<div className="flex justify-center items-center w-full h-5/6">
 				<div className="">
 					<div>
-						<h1 className="text-5xl text-white antonFont text-center">
+						<h1 className="text-5xl text-white antonFont text-center animate__animated animate__lightSpeedInLeft">
 							Hello, I am{" "}
 							<span className="text-blue-400">{metadata.author}</span>
 						</h1>
 					</div>
 
 					<div>
-						<p className="text-center lg:p-5 p-8 text-white antonFont text-lg">
+						<p className="text-center lg:p-5 p-8 text-white antonFont text-lg animate__animated animate__fadeInLeft">
 							I AM <span className="text-blue-400">Full-stack</span> web and mobile developer, Javascript
 							specialist
 						</p>
