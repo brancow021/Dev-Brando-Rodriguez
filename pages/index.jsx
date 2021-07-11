@@ -18,7 +18,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main>
+			<main className="w-full">
 				<header
 					id="home"
 					className="w-full h-screen bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900"

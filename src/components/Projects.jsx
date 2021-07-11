@@ -40,7 +40,7 @@ export const Projects = () => {
 					{filterData?.map((project, index) => (
 						<div
 							key={index}
-							className="bg-gray-200 border rounded-t-xl rounded-b-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 animate__animated animate__fadeInLeft"
+							className="bg-gray-200 border rounded-t-xl rounded-b-xl animate__animated animate__fadeInLeft"
 						>
 							<div className="rounded-t-xl bg-gray-200 border-gray-400 border-t-2 w-full p-2">
 								<h3 className="text-center antonFont text-xl font-normal uppercase">

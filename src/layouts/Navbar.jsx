@@ -33,7 +33,7 @@ export const Navbar = () => {
 					className={
 						activeBarResponsive
 							? "bg-gray-700 opacity-90 lg:bg-gray-900 block animate__animated animate__fadeInDown absolute w-full"
-							: "hidden lg:block"
+							: "animate__animated animate__fadeInUp hidden lg:block"
 					}
 				>
 					<ul className="flex flex-col lg:flex-row p-3">
