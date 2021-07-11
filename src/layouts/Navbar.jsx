@@ -11,7 +11,7 @@ export const Navbar = () => {
 
 	return (
 		<>
-			<div className="w-full lg:px-20 lg:py-2 lg:flex lg:items-center lg:justify-between flex-col lg:flex-row animate__animated animate__lightSpeedInLeft">
+			<div className="w-full lg:px-20 lg:py-2 lg:flex lg:items-center lg:justify-between flex-col lg:flex-row">
             <div className="flex flex-row items-center w-full justify-between px-3 ">
                <div>
                   <a href={'/'}>
@@ -32,7 +32,7 @@ export const Navbar = () => {
 				<div
 					className={
 						activeBarResponsive
-							? "bg-gray-700 opacity-90 lg:bg-gray-900 block transition duration-500 ease-in-out absolute w-full"
+							? "bg-gray-700 opacity-90 lg:bg-gray-900 block animate__animated animate__fadeInDown absolute w-full"
 							: "hidden lg:block"
 					}
 				>
@@ -57,11 +57,11 @@ export const Navbar = () => {
 								<p className="antonFont font-normal">Projects</p>
 							</li>
 						</a>
-						<a href="#contact">
+						{/* <a href="#contact">
 							<li className="lg:mx-2 p-2 text-white hover:text-blue-400 font-semibold">
 								<p className="antonFont font-normal">Contact</p>
 							</li>
-						</a>
+						</a> */}
 					</ul>
 				</div>
 			</div>

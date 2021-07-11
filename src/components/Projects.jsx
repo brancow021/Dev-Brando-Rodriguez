@@ -1,8 +1,24 @@
 import Image from "next/image";
 import { projectsData } from "../data/projects";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import { useState } from "react";
 
 export const Projects = () => {
+
+   const [filterData, setfilterData] = useState(projectsData);
+   const [techs] = useState(['All', 'React', 'React Native', 'Javascript', 'NextJs'])
+
+
+   const handleFilterData = (text) => {
+      if(text === 'All'){ return setfilterData(projectsData) }
+
+      let dataProjectsFilter = projectsData.filter((project) => {
+         return project.tecnologys.find(data => data === text)
+      })
+
+      setfilterData(dataProjectsFilter);
+   }
+
 	return (
 		<>
 			<div className="mt-10 flex justify-center items-center flex-col lg:px-10">
@@ -13,28 +29,18 @@ export const Projects = () => {
 				</div>
 				<div className="pt-10 w-full">
 					<ul className="lg:flex justify-center grid grid-cols-2 gap-2">
-						<li className="lg:mx-4 mx-1 h-8 lg:w-32 w-full bg-gray-800 uppercase md:flex items-center justify-center text-white text-center font-bold">
-							All
-						</li>
-						<li className="lg:mx-4 mx-1 h-8 lg:w-32 w-full bg-gray-800 uppercase md:flex items-center justify-center text-white text-center font-bold">
-							React
-						</li>
-						<li className="lg:mx-4 mx-1 h-8 lg:w-32 w-full bg-gray-800 uppercase md:flex items-center justify-center text-white text-center font-bold">
-							React Native
-						</li>
-						<li className="lg:mx-4 mx-1 h-8 lg:w-32 w-full bg-gray-800 uppercase md:flex items-center justify-center text-white text-center font-bold">
-							Javascript
-						</li>
-						<li className="lg:mx-4 mx-1 h-8 lg:w-32 w-full bg-gray-800 uppercase md:flex items-center justify-center text-white text-center font-bold">
-							Laravel
-						</li>
+                  {techs.map((tech, index) => (
+                     <li key={index} onClick={() => handleFilterData(tech)} className="lg:mx-4 mx-1 h-8 lg:w-32 w-full bg-gray-800 uppercase md:flex items-center justify-center text-white text-center font-bold cursor-pointer hover:bg-blue-500 rounded-xl">
+                        { tech }
+                     </li>
+                  ))}
 					</ul>
 				</div>
 				<div className="flex flex-col lg:grid grid-cols-3 gap-4 my-10">
-					{projectsData?.map((project, index) => (
+					{filterData?.map((project, index) => (
 						<div
 							key={index}
-							className="bg-gray-200 border rounded-t-xl rounded-b-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+							className="bg-gray-200 border rounded-t-xl rounded-b-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 animate__animated animate__fadeInLeft"
 						>
 							<div className="rounded-t-xl bg-gray-200 border-gray-400 border-t-2 w-full p-2">
 								<h3 className="text-center antonFont text-xl font-normal uppercase">

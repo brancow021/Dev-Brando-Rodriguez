@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import MailIcon from '@material-ui/icons/Mail';
 import { metadata } from "../../metaDataPages";
 
 export const Footer = () => {
@@ -38,6 +39,15 @@ export const Footer = () => {
 							<InstagramIcon style={{ color: "white" }} />
 						</a>
 					</div>
+               {/* <div className="mx-2">
+						<a
+							href={metadata.githubUrl}
+							target="blank"
+							className="p-4 bg-gray-800 rounded-xl hover:bg-blue-400 hover: transition duration-700 ease-in-out"
+						>
+							<MailIcon style={{ color: "white" }} />
+						</a>
+					</div> */}
 				</div>
 			</div>
 
